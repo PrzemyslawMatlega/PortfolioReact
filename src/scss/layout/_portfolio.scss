@@ -1,0 +1,110 @@
+.portfolio {
+    grid-column: center-start/ center-end;
+
+    @media (min-width: $XL) {
+        display: grid;
+        grid-template-rows: min-content min-content;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5%;
+    }
+
+    &__title {
+
+        @media (min-width: $XL) {
+            grid-column: 1/3;
+        }
+    }
+}
+
+.project {
+
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 5rem;
+    
+
+    @media (min-width: $XL) {
+        grid-row: 2/3;
+        margin-bottom: 5rem;
+    }
+
+    &__content {
+
+        text-align: justify;
+        @include text;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+
+    &__buttons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        @media (min-width: $XL){
+            justify-content: space-around;
+        }
+    }
+
+    &__title {
+        max-width: 50rem;
+   
+    }
+
+}
+
+
+.WW {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none; 
+    font-family: $font-WW;
+    color: $logo-color;
+    font-size: 4rem;
+
+
+    &__icon {
+        fill: white;
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-left: 0.5rem;
+    }
+
+}
+
+.RT {
+
+
+    color: $logo-color;
+    user-select: none; 
+    outline: none;
+
+    font-family: $font-RT;
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    transform: rotate(-4deg);
+    position: relative;
+    text-align: center;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 25rem;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 0.5rem;
+        border-top: 1px solid $logo-color;
+        border-bottom: 1px solid $logo-color;
+
+    }
+
+
+
+}

@@ -1,0 +1,12 @@
+.header{ 
+    grid-column: full-start/full-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(49, 49, 49, 0.274);
+    border-bottom: 1px solid $line-color;
+    user-select: none; 
+}
+
+

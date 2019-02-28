@@ -1,0 +1,58 @@
+// COLORS 
+$logo-color: rgba(255, 255, 255, 0.938);
+$first-color: rgba(255, 255, 255, 0.89);
+$line-color: rgba(255, 255, 255, 0.089);
+
+// FONTS
+
+$font-logo: 'BenchNine',
+sans-serif;
+$font-one: 'Josefin Sans',
+sans-serif;
+$font-WW: 'Philosopher',
+sans-serif;
+$font-RT: 'Indie Flower',
+cursive;
+
+
+// BP POINTS 
+$XL: 1200px; //<< ZMIENIC UKLAD
+$L : 900px;
+$M : 600px;
+$S : 480px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    
+}
+
+a:hover,
+a:link,
+a:visited,
+a:active{
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+
+    // @media (min-width: $S) {
+    //     font-size: 68.75%;
+    // }
+
+    // @media (min-width: $M) {
+    //     font-size: 75.0%;
+    // }
+
+
+
+}
+

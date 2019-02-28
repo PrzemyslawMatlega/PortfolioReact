@@ -1,0 +1,99 @@
+.heading-name {
+    letter-spacing: 2px;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.heading-frontend {
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    
+}
+
+
+.logo {
+    font-family: $font-logo;
+    color: $logo-color;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
+.heading-about {
+    font-family: $font-one;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin: 2vh 0  1vh 0;
+    border-bottom: 1px solid $line-color;
+    user-select: none; 
+
+}
+
+.heading-section {
+    font-family: $font-logo;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: $first-color;
+    user-select: none; 
+    font-weight: 300;
+
+}
+
+
+.btn-out{
+    width: 45%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-left: 1px  solid $line-color;
+    border-right: 1px  solid $line-color;
+    cursor: pointer;
+    user-select: none; 
+    @media (min-width: $XL){
+        width: 35%;
+        
+    }
+    &>p{
+        width: 100%;
+        text-align: center;
+        font-family: $font-logo;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: $first-color;
+        
+        @media (min-width :$XL){
+            transition: 0.2s color  ease;
+            &:hover{
+                color: white;
+            }
+         }
+        }
+
+}
+
+.mt-one{
+    margin-top:3rem;
+    @media (min-width: $L){
+        margin-top:5rem;
+    }
+}
+
+.mb-one{
+    margin-bottom:5rem;
+    @media (min-width: $XL){
+        margin-bottom:10rem;
+    }
+}
+
+.mb-two{
+    
+    @media (max-width: $XL){
+        margin-bottom:5rem;
+    }
+}
