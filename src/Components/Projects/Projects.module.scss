@@ -1,0 +1,26 @@
+.projects{
+    position: relative;
+    z-index: 20;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    &__nav{
+
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2%;
+    }
+
+    &__arrow{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__icon{
+        fill: rgba(255, 255, 255, 0.788);
+        width: 5rem;
+        height: 3rem;
+    }
+}

@@ -1,33 +1,41 @@
 import React from 'react';
+import ReadTo from './ReadTo/ReadTo';
+import WorldWide from './WorldWide/WorldWide';
+import {ReactComponent as Left} from '../../assets/svg/left.svg';
+import {ReactComponent as Right} from '../../assets/svg/right.svg';
+import classes from './Projects.module.scss';
 
-import Aux from '../../hoc/Auxilliary/Auxilliary';
-const projects = (props) =>(
-   <section className="contact mb-two">
-            <h3 className="heading-section mb-two">Contact</h3>
+import CSSTransition from 'react-transition-group/CSSTransition';
 
-            <div className="social__top mb-two">
-                <div className="socialElement">
-                  
-                    <p className="socialElement__text">przemekmat@yahoo.com</p>
-                </div>
+const projects = (props) =>{
+        const projectList = [<WorldWide/>,<ReadTo/>,<WorldWide/>,<WorldWide/>]
+        
 
-            </div>
+        return (
 
-            <div className="social__bottom">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/przemyslaw-matlega">
-                <p className="socialElement__text">przemekmat@yahoo.com</p>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/przemyslaw.matlega">
-                <p className="socialElement__text">przemekmat@yahoo.com</p>
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/PrzemyslawMatlega">
-                <p className="socialElement__text">przemekmat@yahoo.com</p>
-                </a>
-            </div>
+            <CSSTransition
+            in
+            classNames="fade"
+             appear={true}
+            
+             timeout={1500}          
+           >
+            <section className={classes.projects}>
 
+                {projectList[props.listItem]}
 
-
-        </section>
-);
+                     <div className={classes.projects__nav}>
+                        <div className={classes.projects__arrow} onClick={() => props.sw('prev')}>
+                            <Left className={classes.projects__icon}/>
+                        </div>
+                        <div className={classes.projects__arrow} onClick={() => props.sw('next')}>
+                            <Right className={classes.projects__icon} />
+                        </div>
+                    </div>
+            </section>
+            </CSSTransition>
+        )
+   
+};
 
 export default projects;

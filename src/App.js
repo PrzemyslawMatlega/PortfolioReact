@@ -10,7 +10,8 @@ import './App.scss';
 
 class App extends Component {
   state = {
-    navStatus: 'about'
+    navStatus: 'about',
+    listItem: 0
   };
   
   switchNav = (type) =>{
@@ -21,6 +22,19 @@ class App extends Component {
    
   }
 
+  switchProjects = (projectPos) =>{
+    const oldCount = this.state.listItem;
+      if(projectPos=== 'next'){
+        
+        const updatedCount = oldCount + 1;
+        this.setState( { listItem:updatedCount} );
+      }
+      else{
+        const updatedCount = oldCount - 1;
+        this.setState( { listItem:updatedCount} );
+      }
+
+  }
   
 
   render() {
@@ -32,7 +46,10 @@ class App extends Component {
           navigation = <About/>;
           break;
           case 'projects':
-          navigation = <Projects/>;
+          navigation = <Projects 
+          listItem = {this.state.listItem}
+          sw = {this.switchProjects}
+          />;
           break;
           case 'contact':
           navigation = <Contact/>;
