@@ -6,9 +6,10 @@
 
 header{
     position: absolute;
-    top:0;
+    top:2vh;
     left:0;
     height: 10vh;
+    
     z-index: 20;
     width: 100%;
     display: flex;
@@ -39,9 +40,9 @@ header{
 
 main{
     position: absolute;
-    top:10vh;
+    top:12vh;
     left:0;
-    height: 80vh;
+    height: 78vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.089);
     
@@ -95,16 +96,28 @@ video{
     opacity: 0.01;
 }
 
-.fade-appear.fade-appear-active {
+.fade-appear-active {
     opacity: 1;
     transition: opacity 1000ms ease-in;
 }
 
 .fade-exit {
-    opacity: 0.91;
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
 }
 
-.fade-exit.fade-exit-active {
+.fade-exit-active {
     opacity: 0;
-    transition: opacity 500ms ease-in;
+    transition: opacity 1500ms ease-in;
+}
+
+
+.fade-enter {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
 }

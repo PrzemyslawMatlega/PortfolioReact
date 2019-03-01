@@ -15,11 +15,11 @@ const readto = (props) =>(
                     </p>
 
                     <div className="project-Buttons">
-                            <a target="_blank" class="btn-out" rel="noopener noreferrer" href="https://przemyslawmatlega.github.io/toRead/">
-                                <p>&nbsplive</p>
+                            <a target="_blank" className="btn-out" rel="noopener noreferrer" href="https://przemyslawmatlega.github.io/toRead/">
+                                <p>nbsplive</p>
                             </a>
-                            <a target="_blank" class="btn-out" rel="noopener noreferrer" href="https://github.com/PrzemyslawMatlega/toRead">
-                                <p>&nbspgithub</p>
+                            <a target="_blank" className="btn-out" rel="noopener noreferrer" href="https://github.com/PrzemyslawMatlega/toRead">
+                                <p>nbspgithub</p>
                             </a>
                     </div>
                 </div>

@@ -25,11 +25,12 @@ class App extends Component {
   switchProjects = (projectPos) =>{
     const oldCount = this.state.listItem;
       if(projectPos=== 'next'){
-        
+        if (this.state.listItem===3) return;
         const updatedCount = oldCount + 1;
         this.setState( { listItem:updatedCount} );
       }
       else{
+        if (this.state.listItem===0) return;
         const updatedCount = oldCount - 1;
         this.setState( { listItem:updatedCount} );
       }
@@ -62,10 +63,7 @@ class App extends Component {
       return (
       <div className="App">
                 <CSSTransition
-                in
-                classNames="fade"
-                appear={true}
-                timeout={2500}
+             
                 >
                 <header> 
                   <h1 className="heading-name logo">przemysław matlęga</h1>

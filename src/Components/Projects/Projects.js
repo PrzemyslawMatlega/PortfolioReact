@@ -13,27 +13,42 @@ const projects = (props) =>{
 
         return (
 
-            <CSSTransition
-            in
-            classNames="fade"
-             appear={true}
             
-             timeout={1500}          
-           >
             <section className={classes.projects}>
-
-                {projectList[props.listItem]}
-
+           
+                    {projectList[props.listItem]}
+                
                      <div className={classes.projects__nav}>
                         <div className={classes.projects__arrow} onClick={() => props.sw('prev')}>
-                            <Left className={classes.projects__icon}/>
+                           {
+                               props.listItem===0? null:
+                               <CSSTransition
+                               in
+                               classNames="fade"
+                                appear={true}
+                                timeout={1500}          
+                              >
+                               <Left className={classes.projects__icon}/> 
+                               </CSSTransition>
+                            } 
                         </div>
                         <div className={classes.projects__arrow} onClick={() => props.sw('next')}>
-                            <Right className={classes.projects__icon} />
+                             {
+                               props.listItem===3? null:
+                               <CSSTransition
+                                in
+                                classNames="fade"
+                                appear={true}
+                                onExit={true}
+                                timeout={1500}          
+                                >
+                               <Right className={classes.projects__icon} />
+                               </CSSTransition>
+                             } 
                         </div>
                     </div>
             </section>
-            </CSSTransition>
+            
         )
    
 };
