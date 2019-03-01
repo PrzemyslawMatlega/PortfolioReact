@@ -1,11 +1,17 @@
 import React from 'react';
-
 import Aux from '../../hoc/Auxilliary/Auxilliary';
 import classes from './About.module.scss';
-const about = (props) =>(
-    <Aux>
-      
 
+import CSSTransition from 'react-transition-group/CSSTransition';
+const about = (props) =>(
+
+    <CSSTransition
+     in
+     classNames="fade"
+     appear={true}
+     timeout={1500}          
+   >
+    <Aux>
         <section className={classes.about}>
                 <h3 className={classes.welcome} >Welcome to my portfolio </h3>
                 <p className={classes.text}>
@@ -16,6 +22,7 @@ const about = (props) =>(
         
         </section>
     </Aux>
+    </CSSTransition>
 );
 
 export default about;

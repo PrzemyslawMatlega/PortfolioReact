@@ -1,10 +1,17 @@
 import React from 'react';
 import classes from './ReadTo.module.scss';
-import Aux from '../../../hoc/Auxilliary/Auxilliary';
+import CSSTransition from 'react-transition-group/CSSTransition';
 
 const readto = (props) =>(
             
-            <Aux>
+    <CSSTransition
+    in
+    classNames="fade"
+     appear={true}
+    
+     timeout={1500}          
+   >
+            <div className="project-container">
                  <div className="project__title">
                     <div className="RT">
                         <p>toRead.com</p>
@@ -23,8 +30,9 @@ const readto = (props) =>(
                             </a>
                     </div>
                 </div>
-         </Aux>
-
+         
+         </div>
+         </CSSTransition>
 
 
 );

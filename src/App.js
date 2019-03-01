@@ -64,7 +64,7 @@ class App extends Component {
         <Aux>
 
         <div className="App">
-                  <header> 
+                  <header onClick={() => this.switchNav('about')}> 
                     <h1 className="heading-name logo">przemysław matlęga</h1>
                     <h3 className="heading-frontend logo">Front-end Developer</h3>
                   </header>
@@ -74,8 +74,8 @@ class App extends Component {
                   </main>
 
                   <nav>
-                      <div className="SwitchButton" onClick={() => this.switchNav('projects')}>Projects</div>
-                      <div className="SwitchButton" onClick={ () => this.switchNav('contact')}>Contact</div>
+                      <div className="SwitchButton" onClick={() => this.switchNav('projects')}><p>Projects</p></div>
+                      <div className="SwitchButton" onClick={ () => this.switchNav('contact')}><p>Contact</p></div>
                   </nav>
               
         </div>

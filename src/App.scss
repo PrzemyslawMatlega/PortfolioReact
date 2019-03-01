@@ -21,6 +21,7 @@ header{
     justify-content: center;
     position: relative;
     z-index: 40;
+    cursor: pointer;
 }
 
 .logo {
@@ -68,6 +69,21 @@ nav{
     text-transform: uppercase;
     font-size: 1.5rem;
     cursor: pointer;
+
+    @media (min-width: $XL){
+
+     
+
+
+        // &:hover{
+            
+        //     & >p{
+        //         transition: 0.5s all ease;
+        //         border-bottom: 2px solid white;
+        //     }
+        // }
+    }
+
 }
 
 .videoContainer {
