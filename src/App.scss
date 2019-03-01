@@ -1,20 +1,26 @@
-@import './scss/base/base';
+@import './scss/main.scss';
 
 .App{
-    color: white;   
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    color: white;
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-columns: 100%;
+    overflow: hidden;
 }
 
 header{
-    position: absolute;
-    top:2vh;
-    left:0;
-    height: 10vh;
-    
-    z-index: 20;
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 40;
 }
 
 .logo {
@@ -27,9 +33,10 @@ header{
 
 
 .heading-name {
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     font-size: 3rem;
-    line-height: 1.1;
+    line-height: 1;
+    margin:0;
 }
 
 .heading-frontend {
@@ -39,23 +46,17 @@ header{
 }
 
 main{
-    position: absolute;
-    top:12vh;
-    left:0;
-    height: 78vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.089);
+    position: relative;
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.116);
     
 }
 
 nav{
     display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 10vh;
-    width: 100vw;
-    z-index: 10;
+    position: relative;
+    z-index: 40;
+
 }
 
 .SwitchButton{
@@ -71,7 +72,6 @@ nav{
 
 .videoContainer {
     position: relative;
-
     height: 100vh;
     width: 100vw;
     overflow: hidden;
@@ -92,32 +92,3 @@ video{
     transform: translate(-50%, -50%)
 }
 
-.fade-appear {
-    opacity: 0.01;
-}
-
-.fade-appear-active {
-    opacity: 1;
-    transition: opacity 1000ms ease-in;
-}
-
-.fade-exit {
-    opacity: 1;
-    transition: opacity 1000ms ease-in;
-}
-
-.fade-exit-active {
-    opacity: 0;
-    transition: opacity 1500ms ease-in;
-}
-
-
-.fade-enter {
-    opacity: 0.01;
-    transition: opacity 1000ms ease-in;
-}
-
-.fade-enter-active {
-    opacity: 1;
-    transition: opacity 1000ms ease-in;
-}

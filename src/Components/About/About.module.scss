@@ -1,40 +1,54 @@
-// @import '../../scss/utils/mixin';
-@import '../../scss/base/base';
+
+@import '../../scss/main';
 
 
 
 
 .about{
-    position: absolute;
-    z-index: 30;
-    color: rgba(255, 255, 255, 0.897);
-    width: 100%;
+  
+    color: rgba(255, 255, 255, 0.979);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
+    padding: 0 5%;
+   
     
+    @media (min-width: $M){
+        // 
+    }
 }
 
 
 .welcome{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    height: 25%;
-    
+    align-items: center;
+    margin-bottom: 5%;
     font-family: $font-one;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    width: 100%;
+    @media (min-width: $S){
+        font-size: 1.6rem;
+    }
+    @media (min-width: $XL){
+        font-size: 1.7rem;
+    }
+
+    
+    
     
 }
 
 .text{
     font-family: $font-one;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     text-align: center;
-    margin: 0 10vw;
-    height: 30%;
     font-size: 1.5rem;
+    @media (min-width: $XL){
+        font-size: 1.6rem;
+        margin-top: -3%;
+    }
 }

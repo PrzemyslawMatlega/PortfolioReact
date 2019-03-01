@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import CSSTransition from 'react-transition-group/CSSTransition';
 
 import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import bgVideo from './assets/Hello-World.mp4';
+import Aux from './hoc/Auxilliary/Auxilliary';
 import './App.scss';
 
 
@@ -61,32 +61,32 @@ class App extends Component {
       }
 
       return (
-      <div className="App">
-                <CSSTransition
-             
-                >
-                <header> 
-                  <h1 className="heading-name logo">przemysław matlęga</h1>
-                  <h3 className="heading-frontend logo">Front-end Developer</h3>
-                </header>
+        <Aux>
 
-                </CSSTransition>
+        <div className="App">
+                  <header> 
+                    <h1 className="heading-name logo">przemysław matlęga</h1>
+                    <h3 className="heading-frontend logo">Front-end Developer</h3>
+                  </header>
 
-                <main>
-                    {navigation}
-                </main>
+                  <main>
+                      {navigation}
+                  </main>
 
-                <nav>
-                    <div className="SwitchButton" onClick={() => this.switchNav('projects')}>Projects</div>
-                    <div className="SwitchButton" onClick={ () => this.switchNav('contact')}>Contact</div>
-                </nav>
-            
+                  <nav>
+                      <div className="SwitchButton" onClick={() => this.switchNav('projects')}>Projects</div>
+                      <div className="SwitchButton" onClick={ () => this.switchNav('contact')}>Contact</div>
+                  </nav>
+              
+        </div>
+
                 <div className="videoContainer"> 
                     <video autoPlay muted loop >
                       <source src={bgVideo} type="video/mp4"/>
                     </video>
                 </div>
-      </div>
+
+        </Aux>
     );
   }
 }
