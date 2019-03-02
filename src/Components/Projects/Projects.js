@@ -1,6 +1,8 @@
 import React from 'react';
 import ReadTo from './ReadTo/ReadTo';
 import WorldWide from './WorldWide/WorldWide';
+import Portfolio from './Portfolio/Portfolio';
+import Skills from './Skills/Skills';
 import {ReactComponent as Left} from '../../assets/svg/left.svg';
 import {ReactComponent as Right} from '../../assets/svg/right.svg';
 
@@ -10,7 +12,7 @@ import classes from './Projects.module.scss';
 import CSSTransition from 'react-transition-group/CSSTransition';
 
 const projects = (props) =>{
-        const projectList = [<WorldWide/>,<ReadTo/>,<WorldWide/>,<WorldWide/>]
+        const projectList = [<Portfolio/>,<WorldWide/>,<ReadTo/>,<Skills/>]
         
 
         return (

@@ -7,10 +7,9 @@ import CSSTransition from 'react-transition-group/CSSTransition';
 const worldwide = (props) =>(
             
     <CSSTransition
-    in
-    classNames="fade"
+     in
+     classNames="fade"
      appear={true}
-    
      timeout={1500}          
    >
             <div className="project-container">

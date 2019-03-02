@@ -1,0 +1,30 @@
+@import '../../../scss/base/base';
+@import '../../../scss/utils/mixin';
+
+.skills{
+    
+    @include text;
+    text-align: center;
+    width: 90%;
+    
+    @media screen and (orientation:landscape) and (min-width:$L){
+        width: 45%;
+        margin-top: 10%;
+    
+    }
+    &__head{
+        font-family: $font-one;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin: 2vh 0  1vh 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.082);
+        user-select: none; 
+    }
+
+    &__list{
+        list-style-type: none;
+        text-decoration: none;
+
+    }
+}
+

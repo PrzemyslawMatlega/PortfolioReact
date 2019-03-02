@@ -1,8 +1,8 @@
 @import '../../scss/base/base';
 
 .icon{
-    width: 3.3rem;
-    height: 3.3rem;
+    width: 3rem;
+    height: 3rem;
     fill: white;
 }
 
@@ -18,7 +18,7 @@
     left: 50%;
     top:  50%;
     transform: translate(-50%, -50%);
-    border: 1px solid rgba(128, 128, 128, 0.322);
+    border: 1px solid rgba(128, 128, 128, 0.11);
 
     &__top{
         display: flex;
@@ -38,9 +38,11 @@
 
     @media (min-width: $L){ 
         width: 60%;
+        height: 75%;
     }
-    @media (min-width: $L){
-        width: 50%;
+    @media (min-width: $XL){
+        
+        width: 45%;
     }
 }
 
@@ -53,22 +55,16 @@
 
     &__icon{
         
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 3.2rem;
+        height: 3.2rem;
         fill: rgba(255, 255, 255, 0.87);
             
-        // @media (min-width :$XL){
-        //     transition: 0.1s fill  ease;
-        //     &:hover{
-        //         fill: white;
-        //     }
-        //  }
     }
 
     &__text{
         
         font-family: $font-one;
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: 1px;
         margin-top:1rem;
     }
