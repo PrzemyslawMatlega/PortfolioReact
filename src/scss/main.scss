@@ -16,6 +16,10 @@
     @media screen and (orientation:landscape){
         margin: 0% ;
     }
+    @media screen and (orientation:landscape) and (min-width:$XL){
+        text-align: center;
+        
+    }
 }
 
 .project-Buttons{
@@ -84,8 +88,8 @@
         min-height: 80%;
         padding: 3% 0%;
         grid-column: 2/3;
-        border-top:1px solid rgba(255, 255, 255, 0.089);
-        border-bottom:1px solid rgba(255, 255, 255, 0.089);
+        border-top:1px solid rgba(255, 255, 255, 0.069);
+        border-bottom:1px solid rgba(255, 255, 255, 0.069);
     }
   
 }
@@ -96,7 +100,6 @@
         flex-direction: row;
         align-items: flex-start;
         
-      
     }
 }
 
