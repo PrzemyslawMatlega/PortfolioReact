@@ -4,7 +4,9 @@
 
 
 
-
+a{
+    color: rgba(255, 255, 255, 0);
+}
 
 .project-text{
     font-family: $font-one;
@@ -46,8 +48,16 @@
     border-right: 1px  solid $line-color;
     cursor: pointer;
     user-select: none; 
+    transition: 1s border ease;
+    
     @media (min-width: $XL){
         width: 30%;
+        height: 5rem;
+
+        &:hover{
+            border-top: 1px  solid $line-color;
+            border-bottom: 1px  solid $line-color;
+        }
         
     }
     &>p{
@@ -58,13 +68,13 @@
         letter-spacing: 1rem;
         font-size: 1.6rem;
         line-height: 1.5;
-        color: $first-color;
+        color: rgba(255, 255, 255, 0.788);
         padding-left: 1rem;
         
         @media (min-width :$XL){
             transition: 0.2s color  ease;
             &:hover{
-                color: white;
+                color: rgba(255, 255, 255, 0.945)
             }
          }
         }

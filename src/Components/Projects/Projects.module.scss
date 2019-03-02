@@ -17,14 +17,27 @@
     &__arrow {
         cursor: pointer;
         width: 100%;
-        
-     
+        @media (min-width: $XL ){
+            
+            &:hover {
+                .projects__icon{
+                    fill: rgba(255, 255, 255, 0.644);
+                }
+            }
+        }
+        &:active{
+            .projects__icon{
+                
+                transform: scale(0.98);
+            }
+        }
     }
 
     &__icon {
         fill: rgba(255, 255, 255, 0.336);
         width: 5rem;
         height: 3.2rem;
+        transition: 0.8s fill ease;
     }
 }
 

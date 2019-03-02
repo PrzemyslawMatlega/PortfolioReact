@@ -1,6 +1,6 @@
 @import './scss/main.scss';
 
-.App{
+.App {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,7 +14,7 @@
     overflow: hidden;
 }
 
-header{
+header {
 
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ header{
     z-index: 40;
     cursor: pointer;
     user-select: none;
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.466) 0%, rgba(0, 0, 0, 0.116)100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.466) 0%, rgba(0, 0, 0, 0.116)100%);
 }
 
 .logo {
@@ -39,31 +39,31 @@ header{
     letter-spacing: 3px;
     font-size: 3rem;
     line-height: 1;
-    margin:0;
+    margin: 0;
 }
 
 .heading-frontend {
     letter-spacing: 5px;
     font-size: 1.3rem;
-    
+
 }
 
-main{
+main {
     position: relative;
     z-index: 40;
     background-color: rgba(0, 0, 0, 0.116);
-    
+
 }
 
-nav{
+nav {
     display: flex;
     position: relative;
     z-index: 40;
-    background:linear-gradient(to top, rgba(0, 0, 0, 0.233) 0%, rgba(0, 0, 0, 0.116)100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.233) 0%, rgba(0, 0, 0, 0.116)100%);
 
 }
 
-.SwitchButton{
+.SwitchButton {
     width: 50%;
     height: 100%;
     display: flex;
@@ -71,21 +71,40 @@ nav{
     justify-content: center;
     text-transform: uppercase;
     font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.918);
+    letter-spacing: 2px;
     cursor: pointer;
-
-    @media (min-width: $XL){
-
-     
+    position: relative;
 
 
-        // &:hover{
-            
-        //     & >p{
-        //         transition: 0.5s all ease;
-        //         border-bottom: 2px solid white;
-        //     }
-        // }
+    &::after {
+        content: '';
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.185);
+        opacity: 0;
+        transition: 1s all ease;
+
     }
+
+    @media (min-width: $XL) {
+
+        &:hover {
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &:active {
+            &::after {
+                background: rgba(255, 255, 255, 0.507);
+            }
+        }
+    }
+
 
 }
 
@@ -95,10 +114,10 @@ nav{
     width: 100vw;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.678);
-  }
+}
 
 
-video{
+video {
 
     z-index: -2;
     position: absolute;
@@ -110,4 +129,3 @@ video{
     left: 50%;
     transform: translate(-50%, -50%)
 }
-
