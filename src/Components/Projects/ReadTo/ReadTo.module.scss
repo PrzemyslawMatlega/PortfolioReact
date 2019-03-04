@@ -3,7 +3,7 @@
 
     &__head{
 
-        
+    
     color: $logo-color;
     user-select: none; 
     outline: none;
@@ -15,7 +15,9 @@
     transform: rotate(-4deg);
     position: relative;
     text-align: center;
-
+    @media (max-height:500px){
+        margin-bottom: 1rem;
+    }   
 
     &::after {
         content: '';

@@ -94,7 +94,7 @@ a{
         grid-column: 2/3;
         border: none;
     }
-    @media screen and (orientation:landscape) and (min-width:$L){
+    @media screen and (orientation:landscape) and (min-width:$M){
         min-height: 80%;
         padding: 3% 0%;
         grid-column: 2/3;
@@ -106,7 +106,7 @@ a{
 
 .skills{
    align-items: center;
-    @media screen and (orientation:landscape) and (min-width:$L){
+    @media screen and (orientation:landscape) and (min-width:$M){
         flex-direction: row;
         align-items: flex-start;
         
@@ -142,4 +142,34 @@ a{
 .fade-enter-active {
     opacity: 1;
     transition: opacity 1000ms ease-in;
+}
+
+.fade2-appear {
+    opacity: 0.01;
+}
+
+.fade2-appear-active {
+    opacity: 1;
+    transition: opacity 2000ms ease-in;
+}
+
+.fade2-exit {
+    opacity: 1;
+    transition: opacity 2000ms ease-in;
+}
+
+.fade2-exit-active {
+    opacity: 0;
+    transition: opacity 2000ms ease-in;
+}
+
+
+.fade2-enter {
+    opacity: 0.01;
+    transition: opacity 2000ms ease-in;
+}
+
+.fade2-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms ease-in;
 }

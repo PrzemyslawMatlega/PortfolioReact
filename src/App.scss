@@ -5,7 +5,8 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+
     z-index: 20;
     color: white;
     display: grid;
@@ -53,6 +54,12 @@ main {
     z-index: 40;
     background-color: rgba(0, 0, 0, 0.116);
 
+  @media (max-height:500px){
+      overflow: scroll;
+  }
+}
+main::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
 }
 
 nav {
@@ -113,7 +120,7 @@ nav {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(0, 0, 0, 0.295);
 }
 
 

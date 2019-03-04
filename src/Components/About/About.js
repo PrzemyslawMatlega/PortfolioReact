@@ -7,9 +7,9 @@ const about = (props) =>(
 
     <CSSTransition
      in
-     classNames="fade"
+     classNames="fade2"
      appear={true}
-     timeout={1500}          
+     timeout={2000}          
    >
     <Aux>
         <section className={classes.about}>

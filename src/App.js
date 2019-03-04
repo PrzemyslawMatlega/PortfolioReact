@@ -5,6 +5,7 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import bgVideo from './assets/Hello-World.mp4';
 import Aux from './hoc/Auxilliary/Auxilliary';
+import posterimg from './assets/Hello-World.jpg';
 import './App.scss';
 
 
@@ -81,7 +82,7 @@ class App extends Component {
         </div>
 
                 <div className="videoContainer"> 
-                    <video autoPlay muted loop >
+                    <video autoPlay muted loop playsInline poster={posterimg} >
                       <source src={bgVideo} type="video/mp4"/>
                     </video>
                 </div>

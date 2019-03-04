@@ -10,6 +10,9 @@
         font-family: $font-WW;
         color: $logo-color;
         font-size: 3.5rem;
+        @media (max-height:500px){
+            margin-bottom: 1rem;
+        }   
     }
 
     &__icon{

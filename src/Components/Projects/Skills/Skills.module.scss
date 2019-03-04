@@ -7,7 +7,7 @@
     text-align: center;
     width: 90%;
     
-    @media screen and (orientation:landscape) and (min-width:$L){
+    @media screen and (orientation:landscape) and (min-width:$M){
         width: 45%;
         margin-top: 10%;
     
@@ -24,7 +24,7 @@
     &__list{
         list-style-type: none;
         text-decoration: none;
-
+        
     }
 }
 
