@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/PrzemyslawMatlega/PortfolioReact/tree/gh-pages/precache-manifest.8f956132a42a5ce7e3b8f8b35278d63d.js"
+  "/PrzemyslawMatlega/PortfolioReact/precache-manifest.8ff11303b0fff85a19cf88bd84f831a5.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/PrzemyslawMatlega/PortfolioReact/tree/gh-pages/index.html", {
+workbox.routing.registerNavigationRoute("/PrzemyslawMatlega/PortfolioReact/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
