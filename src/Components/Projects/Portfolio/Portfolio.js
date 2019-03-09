@@ -20,7 +20,7 @@ const portfolio = (props) =>(
                     </p>
                        <div className="project-Buttons single">
                
-                        <a target="_blank" className="btn-out" rel="noopener noreferrer" href="https://github.com/PrzemyslawMatlega/WorldWide">
+                        <a target="_blank" className="btn-out" rel="noopener noreferrer" href="https://github.com/PrzemyslawMatlega/PortfolioReact">
                             <p>github</p>
                         </a>
                     </div>

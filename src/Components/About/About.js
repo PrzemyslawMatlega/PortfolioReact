@@ -17,7 +17,7 @@ const about = (props) =>(
                 <p className={classes.text}>
                             I am highly interested in front-end technologies and 
                             I hope to find a job within a company where I will be able to develop my skills and use my knowledge. 
-                            I am currently focusing on React.js and PWA. 
+                            Currently I am expanding my React.js and PWA skills.
                      </p>
         
         </section>
