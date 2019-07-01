@@ -26,7 +26,7 @@ class App extends Component {
   switchProjects = (projectPos) =>{
     const oldCount = this.state.listItem;
       if(projectPos=== 'next'){
-        if (this.state.listItem===3) return;
+        if (this.state.listItem===4) return;
         const updatedCount = oldCount + 1;
         this.setState( { listItem:updatedCount} );
       }

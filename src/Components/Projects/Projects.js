@@ -39,7 +39,7 @@ const projects = (props) =>{
                       </div>
                       <div className={[classes.projects__arrow, classes.two].join(' ')} onClick={() => props.sw('next')}>
                              {
-                               props.listItem===3? null:
+                               props.listItem===4? null:
                                <CSSTransition
                                 in
                                 classNames="fade"
