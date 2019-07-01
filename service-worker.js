@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/PrzemyslawMatlega/PortfolioReact/precache-manifest.8ff11303b0fff85a19cf88bd84f831a5.js"
+  "/Kaminex/precache-manifest.0de13906505a5640858c3e1562441408.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/PrzemyslawMatlega/PortfolioReact/index.html", {
+workbox.routing.registerNavigationRoute("/Kaminex/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
